@@ -21,3 +21,55 @@ footer {
   font-size: 0.9rem;
   opacity: 0.6;
 }
+
+#addons {
+  padding: 2rem 1rem;
+}
+
+#addons h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.addon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.addon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: transform 0.2s ease;
+}
+
+.addon-card:hover {
+  transform: scale(1.05);
+}
+
+.addon-image {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+  background: #1f2937; /* fallback bg if image is smaller */
+}
+
+.addon-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop and fill */
+  display: block;
+}
+
+.addon-name {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
